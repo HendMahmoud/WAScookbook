@@ -1,6 +1,6 @@
 # WAScookbook
 #Purpose: 
-		This cookbook is used to install Installation manager, Websphere and create Websphere's profile. 
+This cookbook is used to install Installation manager, Websphere and create Websphere's profile. 
 
 #To run:
 -	You must be at cookbook's location
