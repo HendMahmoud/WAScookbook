@@ -3,26 +3,26 @@
 		This cookbook is used to install Installation manager, Websphere and create Websphere's profile. 
 
 #To run:
-•	You must be at cookbook's location
-•	run this command in shell 
+-	You must be at cookbook's location
+-	run this command in shell 
 	chef-client --local-mode --runlist 'recipe[was]'
 
 #Recipes: 
-	default: 
+##default: 
 		Checks machine pre requirements and include all recipes 
-	unzip:
+##unzip:
 		Extracts IM file and 3 parts of was 
-	installIM:
+##installIM:
 		Installs installation manager
-	installWAS:
+##installWAS:
 		Installs Websphere Application Server
-	profile:
+##profile:
 		Creates default profile
  
 #Attributes:
 
-Attribute | Description | Type   | Default
-----------|-------------|--------|--------
+Attribute | Description   | Default
+----------|---------------|--------
 ['ibm']   |		path of collactor of extracted files|		home/ibm
 ['pathIM']|  	extract path of installation manager| 	home/ibm/IM
 ['pathWas']|	extract path of WebSphere application server |	home/ibm/WAS
@@ -44,7 +44,7 @@ Attribute | Description | Type   | Default
 To modify in paths you can find it in location of cookbook + '/cookbooks/attributes/attributes.rb'
 
 #Directory structure and template files are given:
-
+```
  - <home>  					downloaded programs located
       |
       +-- <ibm>
@@ -61,19 +61,19 @@ To modify in paths you can find it in location of cookbook + '/cookbooks/attribu
        +-- IBM
        |     +- InstallationManager           	Installation manager install 
        |     +- WebSphere                    		websphere install
-
+```
 #Limitation:
-•	Run cookbook as client so Chef should be installed.
-•	Assumed files downloaded in home directory.
-•	Run on Redhat OS only.
-•	Static destination directory and WAS profile info.
+- Run cookbook as client so Chef should be installed.
+- Assumed files downloaded in home directory.
+- Run on Redhat OS only.
+- Static destination directory and WAS profile info.
 
 #Possible enhancement:
-•	FTP
-•	Make the cookbook run for any OS.
-•	Make the cookbook run from chef server.
-•	Take parameters from user.
+-	FTP
+-	Make the cookbook run for any OS.
+-	Make the cookbook run from chef server.
+-	Take parameters from user.
 #Author info:
-•	Amira Osama Ali Ashmawy
-•	Hend Mahmoud El-Shafy
-•	Mennat Allah Mamdouh Mohamed
+-	Amira Osama Ali Ashmawy
+-	Hend Mahmoud El-Shafy
+-	Mennat Allah Mamdouh Mohamed
