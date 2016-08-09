@@ -73,6 +73,7 @@ To modify in paths you can find it in location of cookbook + '/cookbooks/attribu
 -	Make the cookbook run for any OS.
 -	Make the cookbook run from chef server.
 -	Take parameters from user.
+-	
 #Author info:
 -	Amira Osama Ali Ashmawy
 -	Hend Mahmoud El-Shafy
