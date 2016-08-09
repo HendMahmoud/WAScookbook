@@ -9,16 +9,16 @@
 
 #Recipes: 
 ##default: 
-		Checks machine pre requirements and include all recipes 
+Checks machine pre requirements and include all recipes 
 ##unzip:
-		Extracts IM file and 3 parts of was 
+Extracts IM file and 3 parts of was 
 ##installIM:
-		Installs installation manager
+Installs installation manager
 ##installWAS:
-		Installs Websphere Application Server
+Installs Websphere Application Server
 ##profile:
-		Creates default profile
- 
+Creates default profile
+
 #Attributes:
 
 Attribute | Description   | Default
