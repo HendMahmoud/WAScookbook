@@ -5,7 +5,9 @@
 #To run:
 -	You must be at cookbook's location
 -	run this command in shell 
-	chef-client --local-mode --runlist 'recipe[was]'
+```bash
+chef-client --local-mode --runlist 'recipe[was]'
+```
 
 #Recipes: 
 ##default: 
@@ -69,11 +71,11 @@ To modify in paths you can find it in location of cookbook + '/cookbooks/attribu
 - Static destination directory and WAS profile info.
 
 #Possible enhancement:
--	FTP
--	Make the cookbook run for any OS.
--	Make the cookbook run from chef server.
--	Take parameters from user.
--	
+- FTP
+- Make the cookbook run for any OS.
+- Make the cookbook run from chef server.
+- Take parameters from user.
+	
 #Author info:
 -	Amira Osama Ali Ashmawy
 -	Hend Mahmoud El-Shafy
