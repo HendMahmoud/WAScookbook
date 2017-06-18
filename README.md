@@ -1,27 +1,27 @@
 # WAScookbook
-#Purpose: 
+# Purpose
 This cookbook is used to install Installation manager, Websphere and create Websphere's profile. 
 
-#To run:
+# TO RUN
 -	You must be at cookbook's location
 -	run this command in shell 
 ```bash
 chef-client --local-mode --runlist 'recipe[was]'
 ```
 
-#Recipes: 
-##default: 
+# Recipes
+## Default
 Checks machine pre requirements and include all recipes 
-##unzip:
+## Unzip
 Extracts IM file and 3 parts of was 
-##installIM:
+## Install IM
 Installs installation manager
-##installWAS:
+## Install WAS
 Installs Websphere Application Server
-##profile:
+## Profile
 Creates default profile
 
-#Attributes:
+# Attributes
 
 Attribute | Description   | Default
 ----------|---------------|--------
@@ -42,10 +42,10 @@ Attribute | Description   | Default
 ['profile']['admin']['name']|	default admin name	|"wasadmin"
 ['profile']['admin']['pass']|	default password of admin|	"wasadmin"
 
-#Note:
+# Note
 To modify in paths you can find it in location of cookbook + '/cookbooks/attributes/attributes.rb'
 
-#Directory structure and template files are given:
+# Directory structure and template files are given
 ```
  - <home>  					downloaded programs located
       |
@@ -64,19 +64,19 @@ To modify in paths you can find it in location of cookbook + '/cookbooks/attribu
        |     +- InstallationManager           	Installation manager install 
        |     +- WebSphere                    		websphere install
 ```
-#Limitation:
+# Limitation
 - Run cookbook as client so Chef should be installed.
 - Assumed files downloaded in home directory.
 - Run on Redhat OS only.
 - Static destination directory and WAS profile info.
 
-#Possible enhancement:
+# Possible enhancement
 - FTP
 - Make the cookbook run for any OS.
 - Make the cookbook run from chef server.
 - Take parameters from user.
 	
-#Author info:
+# Author info
 -	Amira Osama Ali Ashmawy
 -	Hend Mahmoud El-Shafy
 -	Mennat Allah Mamdouh Mohamed
